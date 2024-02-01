@@ -147,11 +147,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Instance.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\RathalosEngine.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
+    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Instance.hpp" />
     <ClInclude Include="include\RathalosEngine.hpp" />
+    <ClInclude Include="include\Utils.hpp" />
+    <ClInclude Include="include\Window.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

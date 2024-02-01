@@ -2,11 +2,17 @@
 
 #include <iostream>
 
+#include "Window.hpp"
+#include "Instance.hpp"
+
 namespace re {
+
 	class RathalosEngine {
 	public:
 		RathalosEngine(void);
 		~RathalosEngine(void);
-	private:	
+	private:
+		re::Instance instance;
 	};
+
 }
