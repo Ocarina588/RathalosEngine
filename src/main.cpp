@@ -1,19 +1,19 @@
 #include <iostream>
 #include "RathalosEngine.hpp"
 
-int start(int ac, char** av) {
-    re::Window window("Rathalos Engine", 1280, 720);
+int start(int ac, char** av)
+{
     re::RathalosEngine engine;
 
-    while (window.open()) {
-        window.pollEvents();
+    while (engine.window.open()) {
+       engine.window.pollEvents();
     }
 
     return 0;
 }
 
-int main(int ac, char **av) {
-    
+int main(int ac, char **av)
+{
     try {
         return start(ac, av);
     }

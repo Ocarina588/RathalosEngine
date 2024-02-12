@@ -4,6 +4,8 @@
 
 #include "Window.hpp"
 #include "Instance.hpp"
+#include "Surface.hpp"
+#include "Device.hpp"
 
 namespace re {
 
@@ -11,8 +13,14 @@ namespace re {
 	public:
 		RathalosEngine(void);
 		~RathalosEngine(void);
-	private:
+		
+		re::Window window{ "Rathalos Engine", 1280, 720 };
 		re::Instance instance;
+		re::Surface surface{ window, instance };
+		re::Device device{ instance, surface };
+
+	private:
+
 	};
 
 }

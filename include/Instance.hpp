@@ -15,6 +15,8 @@ namespace re {
 		Instance(void);
 		~Instance(void);
 
+		VkInstance ptr;
+
 	private:
 		std::vector<char const *> getLayers(void);
 		std::vector<char const *> getExtensions(void);
@@ -26,7 +28,5 @@ namespace re {
 
 		bool const debug = true;
 		VkDebugUtilsMessengerEXT debugMessenger;
-
-		VkInstance ptr;
 	};
 }

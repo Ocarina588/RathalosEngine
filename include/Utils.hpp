@@ -11,4 +11,7 @@ namespace utils {
 	#define TERMINAL_COLOR_CYAN    "\x1B[36m"
 	#define TERMINAL_COLOR_WHITE   "\x1B[37m"
 
+	#define TAB "    "
+	
+	#define INVALID_UINT32 static_cast<uint32_t>(-1)
 }
